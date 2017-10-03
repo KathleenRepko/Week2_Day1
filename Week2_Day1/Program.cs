@@ -93,17 +93,21 @@ namespace Week2_Day1
             ////fruits[2] = "pear";
             ////fruits[3] = "grape";
             ////or
-            string[] fruits = { "banana", "apple", "pear", "grape" };
+            //string[] fruits = { "banana", "apple", "pear", "grape" };
 
             //int secondLast = ((fruits.Length) - 2);
             //Console.WriteLine(fruits[secondLast]);
             ////or
             ////Console.WriteLine(fruits[fruits.Length - 2]);
 
-            Console.WriteLine("This is the last index: " + (fruits.Length - 1));
+            //Console.WriteLine("This is the last index: " + (fruits.Length - 1));
             //Useful when number of elements in array has changed.
 
-
+            //For user to determine length of array:
+            Console.WriteLine("Please enter the size of your array.");
+            int arraySize = int.Parse(Console.ReadLine());
+            int[] newArray = new int[arraySize];
+            Console.WriteLine("The array is of length " + newArray.Length);
         }
     }
 }
